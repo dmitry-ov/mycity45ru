@@ -1,0 +1,496 @@
+/!\ FAILSAFE /!\  Thu Nov 11 15:46:13 +0500 2010
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /home/d/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/d/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/dependencies.rb:182:in `require'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/dependencies.rb:547:in `new_constants_in'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/dependencies.rb:182:in `require'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.10/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /home/d/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+    /home/d/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.10/lib/commands/server.rb:111
+    /home/d/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/d/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing Rails::InfoController#properties (for 10.44.0.121 at 2010-11-11 15:47:02) [GET]
+  [4;36;1mSQL (32.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 72ms (View: 3, DB: 32) | 200 OK [http://10.44.0.210/rails/info/properties]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlacemarks (20101111105045)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "placemarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "kind" varchar(255), "adress" varchar(255), "geopoint" varchar(255), "description" text, "foto" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101111105045')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("placemarks")[0m
+
+
+Processing Rails::InfoController#properties (for 10.44.0.121 at 2010-11-11 15:52:00) [GET]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 24ms (View: 3, DB: 1) | 200 OK [http://10.44.0.210/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 10.44.0.121 at 2010-11-11 15:52:44) [GET]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 17ms (View: 2, DB: 1) | 200 OK [http://10.44.0.210/rails/info/properties]
+
+
+Processing ApplicationController#index (for 10.44.0.121 at 2010-11-11 15:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/%D0%B7%D0%B4%D1%84%D1%81%D1%83%D1%8C%D1%84%D0%BA%D0%BB%D1%8B." with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 10.44.0.121 at 2010-11-11 15:56:24) [GET]
+  [4;36;1mPlacemark Load (0.7ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 299ms (View: 23, DB: 1) | 200 OK [http://10.44.0.210/placemarks/]
+
+
+Processing PlacemarksController#index (for 10.44.0.121 at 2010-11-11 15:57:26) [GET]
+  [4;35;1mPlacemark Load (0.7ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://10.44.0.210/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 15:58:13) [GET]
+  [4;36;1mPlacemark Load (0.7ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 15:59:11) [GET]
+  [4;35;1mPlacemark Load (0.8ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 21ms (View: 12, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 15:59:56) [GET]
+  [4;36;1mPlacemark Load (0.5ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 18ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:00:31) [GET]
+  [4;35;1mPlacemark Load (0.6ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 10ms (View: 1, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:00:37) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.309613,55.398437", "description"=>""}, "commit"=>"Создать"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (58.3ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:01:33) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.309613,55.398437", "description"=>""}, "commit"=>"Создать"}
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:01:33', '65.309613,55.398437', '2010-11-11 11:01:33', NULL, NULL, '')[0m
+
+NameError (undefined local variable or method `add_to_xml' for #<PlacemarksController:0xb659a6a8>):
+  app/controllers/placemarks_controller.rb:48:in `create'
+  app/controllers/placemarks_controller.rb:45:in `create'
+
+Rendered rescues/_trace (136.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:01:36) [GET]
+  [4;35;1mPlacemark Load (0.5ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:01:38) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.227216,55.404689", "description"=>""}, "commit"=>"Создать"}
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:01:38', '65.227216,55.404689', '2010-11-11 11:01:38', NULL, NULL, '')[0m
+
+NameError (undefined local variable or method `add_to_xml' for #<PlacemarksController:0xb66f3b94>):
+  app/controllers/placemarks_controller.rb:48:in `create'
+  app/controllers/placemarks_controller.rb:45:in `create'
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:16:32) [GET]
+  [4;35;1mPlacemark Load (1.0ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 13ms (View: 3, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:16:34) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.330212,55.417971", "description"=>""}, "commit"=>"Создать"}
+  [4;36;1mPlacemark Create (0.4ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:16:34', '65.330212,55.417971', '2010-11-11 11:16:34', NULL, NULL, '')[0m
+
+NameError (undefined local variable or method `add_to_xml' for #<PlacemarksController:0xb6579868>):
+  app/controllers/placemarks_controller.rb:48:in `create'
+  app/controllers/placemarks_controller.rb:45:in `create'
+
+Rendered rescues/_trace (146.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:16:56) [GET]
+  [4;36;1mPlacemark Load (1.2ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 271ms (View: 19, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:16:59) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.370038,55.295138", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (0.6ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:16:59', '65.370038,55.295138', '2010-11-11 11:16:59', NULL, NULL, '')[0m
+
+NameError (undefined local variable or method `add_to_xml' for #<PlacemarksController:0xb65d1b6c>):
+  app/controllers/placemarks_controller.rb:48:in `create'
+  app/controllers/placemarks_controller.rb:45:in `create'
+
+Rendered rescues/_trace (70.3ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:22:45) [GET]
+  [4;36;1mPlacemark Load (0.9ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 12ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:22:48) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.30412,55.37733", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:22:48', '65.30412,55.37733', '2010-11-11 11:22:48', NULL, NULL, '')[0m
+
+Errno::ENOENT (No such file or directory - home/d/SRC/mycity45ru/public/simpleobject.xml):
+  app/models/placemark.rb:9:in `initialize'
+  app/models/placemark.rb:9:in `open'
+  app/models/placemark.rb:9:in `add_to_xml'
+  app/controllers/placemarks_controller.rb:47:in `create'
+  app/controllers/placemarks_controller.rb:45:in `create'
+
+Rendered rescues/_trace (58.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:23:56) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.30412,55.37733", "description"=>""}, "commit"=>"Создать"}
+  [4;36;1mPlacemark Create (0.3ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:23:56', '65.30412,55.37733', '2010-11-11 11:23:56', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/6
+Completed in 23ms (DB: 0) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-11 16:23:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPlacemark Load (0.3ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 6) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://78.108.78.166/placemarks/6]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 16:23:58) [GET]
+  [4;36;1mPlacemark Load (0.8ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 16:24:01) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.379651,55.292788", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 11:24:01', '65.379651,55.292788', '2010-11-11 11:24:01', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/7
+Completed in 24ms (DB: 0) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-11 16:24:01) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPlacemark Load (0.3ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 7) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://78.108.78.166/placemarks/7]
+
+
+Processing PlacemarksController#index (for 10.44.0.121 at 2010-11-11 18:27:33) [GET]
+  [4;36;1mPlacemark Load (1.7ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 351ms (View: 85, DB: 2) | 200 OK [http://10.44.0.210/]
+
+
+Processing PlacemarksController#index (for 10.44.0.121 at 2010-11-11 18:27:49) [GET]
+  [4;35;1mPlacemark Load (1.0ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://10.44.0.210/placemarks/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 18:28:07) [GET]
+  [4;36;1mPlacemark Load (0.9ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 11ms (View: 1, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-11 18:28:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPlacemark Load (0.4ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 7) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://78.108.78.166/placemarks/7]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 18:28:16) [GET]
+  [4;36;1mPlacemark Load (1.1ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 13ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-11 18:29:54) [GET]
+  [4;36;1mPlacemark Load (1.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 259ms (View: 18, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-11 18:30:00) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.224469,55.462471", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (1.1ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-11 13:30:00', '65.224469,55.462471', '2010-11-11 13:30:00', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/8
+Completed in 59ms (DB: 1) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-11 18:30:01) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPlacemark Load (0.3ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 8) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://78.108.78.166/placemarks/8]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-12 10:36:35) [GET]
+  [4;36;1mPlacemark Load (43.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 567ms (View: 129, DB: 43) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-12 10:36:41) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.236829,55.38593", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (0.6ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-12 05:36:41', '65.236829,55.38593', '2010-11-12 05:36:41', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/9
+Completed in 33ms (DB: 1) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-12 10:36:41) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPlacemark Load (0.4ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 9) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 51ms (View: 41, DB: 0) | 200 OK [http://78.108.78.166/placemarks/9]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-12 10:37:03) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-12 10:37:05) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing ApplicationController#index (for 78.108.78.166 at 2010-11-12 10:37:18) [GET]
+
+ActionController::RoutingError (No route matches "/show/5" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 78.108.78.166 at 2010-11-12 10:37:21) [GET]
+
+ActionController::RoutingError (No route matches "/show/7" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 78.108.78.166 at 2010-11-12 10:37:24) [GET]
+
+ActionController::RoutingError (No route matches "/show/9" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 78.108.78.166 at 2010-11-12 10:39:28) [GET]
+
+SyntaxError (/home/d/SRC/mycity45ru/app/controllers/placemarks_controller.rb:89: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-12 10:39:47) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-12 10:40:16) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.386517,55.344474", "description"=>""}, "commit"=>"Создать"}
+  [4;35;1mPlacemark Create (0.4ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-12 05:40:16', '65.386517,55.344474', '2010-11-12 05:40:16', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/10
+Completed in 28ms (DB: 0) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-12 10:40:16) [GET]
+  Parameters: {"id"=>"10"}
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+
+ActionView::TemplateError (undefined method `kind' for nil:NilClass) on line #3 of app/views/placemarks/show.html.erb:
+1: <p>
+2:   <b>Kind:</b>
+3:   <%=h @placemark.kind %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/placemarks/show.html.erb:3
+
+Rendered rescues/_trace (149.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#create (for 78.108.78.166 at 2010-11-12 10:40:39) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Яма", "geopoint"=>"65.346692,55.385149", "description"=>""}, "commit"=>"Создать"}
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-11-12 05:40:39', '65.346692,55.385149', '2010-11-12 05:40:39', NULL, NULL, '')[0m
+Redirected to http://78.108.78.166:3000/placemarks/11
+Completed in 31ms (DB: 0) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 78.108.78.166 at 2010-11-12 10:40:39) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mPlacemark Load (0.3ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 11) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://78.108.78.166/placemarks/11]
+
+
+Processing PlacemarksController#edit (for 78.108.78.166 at 2010-11-12 10:41:07) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mPlacemark Load (0.3ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 11) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+Completed in 45ms (View: 36, DB: 0) | 200 OK [http://78.108.78.166/placemarks/11/edit]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-12 10:41:17) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]

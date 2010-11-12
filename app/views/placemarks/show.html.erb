@@ -1,0 +1,28 @@
+<p>
+  <b>Kind:</b>
+  <%=h @placemark.kind %>
+</p>
+
+<p>
+  <b>Adress:</b>
+  <%=h @placemark.adress %>
+</p>
+
+<p>
+  <b>Geopoint:</b>
+  <%=h @placemark.geopoint %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @placemark.description %>
+</p>
+
+<p>
+  <b>Foto:</b>
+  <%=h @placemark.foto %>
+</p>
+
+
+<%= link_to 'Edit', edit_placemark_path(@placemark) %> |
+<%= link_to 'Back', placemarks_path %>

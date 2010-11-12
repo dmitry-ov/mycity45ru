@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ymaps:ymaps xsi:schemaLocation='http://maps.yandex.ru/schemas/ymaps/1.x/ymaps.xsd' xmlns:repr='http://maps.yandex.ru/representation/1.x' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:ymaps='http://maps.yandex.ru/ymaps/1.x' xmlns:gml='http://www.opengis.net/gml'>
+    <ymaps:GeoObjectCollection>
+        <gml:name>Объекты карте</gml:name>
+	<gml:featureMembers>
+        <ymaps:GeoObject><gml:name>Яма</gml:name><gml:description/><gml:Point><gml:pos>65.30412 55.37733</gml:pos></gml:Point></ymaps:GeoObject><ymaps:GeoObject><gml:name>Яма</gml:name><gml:description/><gml:Point><gml:pos>65.379651 55.292788</gml:pos></gml:Point></ymaps:GeoObject><ymaps:GeoObject><gml:name>Яма</gml:name><gml:description/><gml:Point><gml:pos>65.224469 55.462471</gml:pos></gml:Point></ymaps:GeoObject><ymaps:GeoObject><gml:name>Яма</gml:name><gml:description/><gml:Point><gml:pos>65.236829 55.38593</gml:pos></gml:Point></ymaps:GeoObject><ymaps:GeoObject><gml:name>Яма</gml:name><gml:description/><gml:Point><gml:pos>65.386517 55.344474</gml:pos></gml:Point></ymaps:GeoObject><ymaps:GeoObject><gml:name>Яма</gml:name><gml:description></gml:description><gml:Point><gml:pos>65.346692 55.385149</gml:pos></gml:Point></ymaps:GeoObject></gml:featureMembers>
+    </ymaps:GeoObjectCollection>
+</ymaps:ymaps>
