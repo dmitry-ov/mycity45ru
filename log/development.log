@@ -500,3 +500,208 @@ Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:02:09)
 Rendering template within layouts/placemarks
 Rendering placemarks/index
 Completed in 30ms (View: 24, DB: 0) | 200 OK [http://78.108.78.166/]
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePlacemarks (20101111105045)
+Migrating to CreateUsers (20101115130426)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime, "activation_code" varchar(40), "activated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_login" ON "users" ("login")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101115130426')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("placemarks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:07:45) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing SessionsController#new (for 78.108.78.166 at 2010-11-15 18:07:53) [GET]
+Rendering sessions/new
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://78.108.78.166/login]
+  [4;36;1mUser Delete all (1.6ms)[0m   [0;1mDELETE FROM "users" WHERE 1=1[0m
+
+
+Processing UsersController#new (for 78.108.78.166 at 2010-11-15 18:08:18) [GET]
+Rendering users/new
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://78.108.78.166/signup]
+
+
+Processing UsersController#create (for 78.108.78.166 at 2010-11-15 18:08:28) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"6wJlPmvckFKz+GU28snUTUq1hSlkticXqba5s8Re2ig=", "user"=>{"password_confirmation"=>"2044linux", "password"=>"2044linux", "login"=>"dio", "email"=>"ovcharenkodmitry@gmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'dio') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'ovcharenkodmitry@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', '2600f6023042637135e1ea7323ea5b74f288f9e6', '2010-11-15 13:08:28', NULL, '2bb58c16d1429063b301cb7820213c802290170f', NULL, '2010-11-15 13:08:28', '6d29d24bb818c2113a38c9f46ea02413714e8e65', NULL, 'dio', 'ovcharenkodmitry@gmail.com')[0m
+Sent mail to ovcharenkodmitry@gmail.com
+
+Date: Mon, 15 Nov 2010 18:08:28 +0500
+From: finexp@mail.ru
+To: ovcharenkodmitry@gmail.com
+Subject: Active key Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: dio
+  Password: 2044linux
+
+Visit this url to activate your account:
+
+  http://78.108.78.166:3000/activate/6d29d24bb818c2113a38c9f46ea02413714e8e65
+Redirected to http://78.108.78.166:3000/
+Completed in 1247ms (DB: 1) | 302 Found [http://78.108.78.166/users]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:08:29) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 28ms (View: 25, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing UsersController#activate (for 78.108.78.166 at 2010-11-15 18:08:50) [GET]
+  Parameters: {"activation_code"=>"6d29d24bb818c2113a38c9f46ea02413714e8e65"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."activation_code" = '6d29d24bb818c2113a38c9f46ea02413714e8e65') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-11-15 13:08:50', "activated_at" = '2010-11-15 13:08:50', "activation_code" = NULL WHERE "id" = 1[0m
+Sent mail to ovcharenkodmitry@gmail.com
+
+Date: Mon, 15 Nov 2010 18:08:50 +0500
+From: finexp@mail.ru
+To: ovcharenkodmitry@gmail.com
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166:3000/
+Redirected to http://78.108.78.166:3000/login
+Completed in 1014ms (DB: 1) | 302 Found [http://78.108.78.166/activate/6d29d24bb818c2113a38c9f46ea02413714e8e65]
+
+
+Processing SessionsController#new (for 78.108.78.166 at 2010-11-15 18:08:51) [GET]
+Rendering sessions/new
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#new (for 78.108.78.166 at 2010-11-15 18:09:02) [GET]
+Rendering sessions/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 78.108.78.166 at 2010-11-15 18:09:07) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6wJlPmvckFKz+GU28snUTUq1hSlkticXqba5s8Re2ig=", "login"=>"dio", "password"=>"2044linux"}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to ovcharenkodmitry@gmail.com
+
+Date: Mon, 15 Nov 2010 18:09:07 +0500
+From: finexp@mail.ru
+To: ovcharenkodmitry@gmail.com
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166:3000/
+Redirected to http://78.108.78.166:3000/
+Completed in 723ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:09:08) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:09:45) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:11:15) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:13:20) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:18:33) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:18:56) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:19:04) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:20:34) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:21:09) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:21:22) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing SessionsController#destroy (for 78.108.78.166 at 2010-11-15 18:21:28) [GET]
+Redirected to http://78.108.78.166:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://78.108.78.166/logout]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2010-11-15 18:21:28) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
