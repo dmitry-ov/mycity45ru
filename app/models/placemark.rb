@@ -3,7 +3,7 @@ require "rexml/document"
 class Placemark < ActiveRecord::Base
 
 
-   PATH_TO_XML =  "/home/d/SRC/mycity45ru/public/simpleobject.xml" 
+   PATH_TO_XML =  "/home/d/src/mycity45ru/public/simpleobject.xml" 
 
   def add_to_xml
         file = File.open( PATH_TO_XML , 'r'){ |file| file.read }

@@ -22,7 +22,7 @@
     map.enableScrollZoom();
 
     // Создание и добавление YMapsML-документа на карту
-    var ml = new YMaps.YMapsML('http://78.108.78.166:3000/simpleobject.xml');
+    var ml = new YMaps.YMapsML('http://78.108.78.166/simpleobject.xml');
     map.addOverlay(ml);
 // Обработчик неудачной загрузки YMapsML
     YMaps.Events.observe(ml, ml.Events.Fault, function (ml, error) {
