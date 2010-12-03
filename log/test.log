@@ -1,0 +1,297 @@
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 11:56:42', NULL, '2010-12-02 11:56:42', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:06:58', NULL, '2010-12-02 12:06:58', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:13:39', NULL, '2010-12-02 12:13:39', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:16:18', NULL, '2010-12-02 12:16:18', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.6ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:16:47', NULL, '2010-12-02 12:16:47', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.6ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:58:40', NULL, '2010-12-02 12:58:40', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.6ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 12:59:56', NULL, '2010-12-02 12:59:56', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 13:00:19', NULL, '2010-12-02 13:00:19', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 13:00:44', NULL, '2010-12-02 13:00:44', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.9ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 13:01:06', NULL, '2010-12-02 13:01:06', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.9ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 13:26:15', NULL, '2010-12-02 13:26:15', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (1.0ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-02 14:29:04', NULL, '2010-12-02 14:29:04', NULL, NULL, NULL)[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', '6e186845881055c28ef7877ab457bf39466862a0', '2010-12-03 08:09:10', NULL, 'e22fc0cc9e9c28669b79a241f1190e7dc3598b30', NULL, '2010-12-03 08:09:10', 'c7d23881908acb5481e0d2640c0c364c7633b0d9', NULL, 'quire', 'quire@example.com')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', '89139841b3871a34ab239979d62310cf750f9f67', '2010-12-03 08:09:10', NULL, 'c9d7a354de70bfafa4d63fe7ffb3d4fc63f7d656', NULL, '2010-12-03 08:09:10', '5f4119c1b172c2ea442304538597abd78f8e5135', NULL, 'quire', 'quire@example.com')[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quentin2' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quentin@example.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "login" = 'quentin2' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "remember_token" = '7ae019981a2e6dd662e98a0b0402032348aeb3a6', "remember_token_expires_at" = '2010-12-17 08:09:10' WHERE "id" = 1[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "remember_token" = '082cf0e152dcf91980c1aa115b0f3bb40a4ac832', "remember_token_expires_at" = '2010-12-10 08:09:10' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (1.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "remember_token" = '60086099608d3d46fc5a773faa03d7f3b3935212', "remember_token_expires_at" = '2010-12-10 08:09:10' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quentin' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quentin@example.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "crypted_password" = '40c281edf4a510a85ec3807df0bbb690d283f6ba' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "remember_token" = '605628c7ef2c600797989879bff7af9d6dcefd1b', "remember_token_expires_at" = '2010-12-17 08:09:10' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:10', "remember_token" = '727f7a26bc8dd006ab184c4c8e8c4f1f8d23f77f', "remember_token_expires_at" = '2010-12-17 08:09:10' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "placemarks" [0m
+
+
+Processing PlacemarksController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"placemark"=>{}}
+  [4;35;1mPlacemark Create (0.4ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 08:09:13', NULL, '2010-12-03 08:09:13', NULL, NULL, NULL)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "placemarks" [0m
+  [4;35;1mPlacemark Load (0.3ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+
+
+Processing PlacemarksController#destroy (for 0.0.0.0 at 2010-12-03 16:09:13) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mPlacemark Load (0.4ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+  [4;35;1mPlacemark Destroy (0.4ms)[0m   [0mDELETE FROM "placemarks" WHERE "id" = 980190962[0m
+Redirected to http://test.host/placemarks
+Completed in 3ms (DB: 5) | 302 Found [http://test.host/placemarks/980190962]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "placemarks" [0m
+  [4;35;1mPlacemark Load (1.0ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+
+
+Processing PlacemarksController#edit (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mPlacemark Load (0.4ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+Completed in 20ms (View: 18, DB: 2) | 200 OK [http://test.host/placemarks/980190962/edit]
+
+
+Processing PlacemarksController#index (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PlacemarksController#new (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/placemarks/new]
+  [4;35;1mPlacemark Load (0.5ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+
+
+Processing PlacemarksController#show (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mPlacemark Load (0.4ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/placemarks/980190962]
+  [4;35;1mPlacemark Load (1.0ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+
+
+Processing PlacemarksController#update (for 0.0.0.0 at 2010-12-03 16:09:13) [PUT]
+  Parameters: {"placemark"=>{}, "id"=>"980190962"}
+  [4;36;1mPlacemark Load (0.4ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 980190962) [0m
+Redirected to http://test.host/placemarks/980190962
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/placemarks/980190962?]
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/logout]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = '505aabdf8d224be2a2a6422ac4f40e4347671f32', "remember_token_expires_at" = '2010-12-17 08:09:13' WHERE "id" = 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = '896e15e73097886c9a529c7052ec13e2baf4a522', "remember_token_expires_at" = '2010-12-17 08:09:13' WHERE "id" = 1[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"password"=>"bad password", "login"=>"quentin"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'quentin' from 0.0.0.0 at Fri Dec 03 08:09:13 UTC 2010
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 3) | 200 OK [http://test.host/session?login=quentin&password=bad+password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"password"=>"monkey", "login"=>"quentin"}
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = NULL, "remember_token_expires_at" = NULL WHERE "id" = 1[0m
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = 'abade9625680bc6fe478a98fb62a031ad67ab2a9', "remember_token_expires_at" = '2010-12-17 08:09:13' WHERE "id" = 1[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+Redirected to http://test.host/
+Completed in 0ms (DB: 5) | 302 Found [http://test.host/logout]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"remember_me"=>"0", "password"=>"monkey", "login"=>"quentin"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = NULL, "remember_token_expires_at" = NULL WHERE "id" = 1[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"remember_me"=>"1", "password"=>"monkey", "login"=>"quentin"}
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "remember_token" = '04efbd993c31aa779432a597e1e070bb679cd693', "remember_token_expires_at" = '2010-12-17 08:09:13' WHERE "id" = 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'aaron' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+  Parameters: {"activation_code"=>"1b6453892473a467d07372d45eb05abc2031647a"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."activation_code" = '1b6453892473a467d07372d45eb05abc2031647a') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-12-03 08:09:13', "activated_at" = '2010-12-03 08:09:13', "activation_code" = NULL WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', '24030a6bfbe0a22c72f49b162e9b945051a55715', '2010-12-03 08:09:13', NULL, '1cf3d86e3bbf04661903ca6caf33cef542ce2ce6', NULL, '2010-12-03 08:09:13', '802baf270f0036e66898179de6bcb2303618c947', NULL, 'quire', 'quire@example.com')[0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+  Parameters: {"activation_code"=>""}
+Redirected to http://test.host/
+Completed in 0ms (DB: 6) | 302 Found [http://test.host/activate/]
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2010-12-03 16:09:13) [GET]
+Redirected to http://test.host/
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/activate]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>nil}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+Rendering users/new
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://test.host/register?user%5Bemail%5D=&user%5Blogin%5D=quire&user%5Bpassword%5D=quire69&user%5Bpassword_confirmation%5D=quire69]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>nil, "email"=>"quire@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://test.host/register?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=&user%5Bpassword%5D=quire69&user%5Bpassword_confirmation%5D=quire69]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://test.host/register?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire69&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"quire69", "password"=>nil, "login"=>"quire", "email"=>"quire@example.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://test.host/register?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=quire69]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2010-12-03 16:09:13) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"quire69", "password"=>"quire69", "login"=>"quire", "email"=>"quire@example.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', 'bf1b3a6eb33cf334dc72f98e45d26142e2bc62f0', '2010-12-03 08:09:13', NULL, '77dbca1b5155871a5b08cda96bbc1775518ccd98', NULL, '2010-12-03 08:09:13', '0305d2d422ae0db2640540f40f641581b78e2378', NULL, 'quire', 'quire@example.com')[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 08:09:26', NULL, '2010-12-03 08:09:26', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 08:28:38', NULL, '2010-12-03 08:28:38', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 08:28:45', NULL, '2010-12-03 08:28:45', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:44:29', NULL, '2010-12-03 11:44:29', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:44:56', NULL, '2010-12-03 11:44:56', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:45:08', NULL, '2010-12-03 11:45:08', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:45:24', NULL, '2010-12-03 11:45:24', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:45:43', NULL, '2010-12-03 11:45:43', NULL, NULL, NULL)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:46:32', NULL, '2010-12-03 11:46:32', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 11:46:32', NULL, '2010-12-03 11:46:32', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:02:11', NULL, '2010-12-03 12:02:11', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:02:11', NULL, '2010-12-03 12:02:11', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:02:24', NULL, '2010-12-03 12:02:24', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (1.0ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:02:24', NULL, '2010-12-03 12:02:24', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:08:26', NULL, '2010-12-03 12:08:26', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (1.0ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:08:26', NULL, '2010-12-03 12:08:26', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:08:35', NULL, '2010-12-03 12:08:35', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:09:55', NULL, '2010-12-03 12:09:55', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (1.0ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:09:55', NULL, '2010-12-03 12:09:55', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:32:19', NULL, '2010-12-03 12:32:19', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (1.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:32:19', NULL, '2010-12-03 12:32:19', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:32:55', NULL, '2010-12-03 12:32:55', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (1.0ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:32:55', NULL, '2010-12-03 12:32:55', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-12-03 12:32:55', '65.309613,55.398437', '2010-12-03 12:32:55', 'Куйбышева 137а', NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:33:07', NULL, '2010-12-03 12:33:07', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:33:07', NULL, '2010-12-03 12:33:07', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (1.2ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-12-03 12:33:07', '65.309613,55.398437', '2010-12-03 12:33:07', 'Куйбышева 137а', NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:35:11', NULL, '2010-12-03 12:35:11', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:35:11', NULL, '2010-12-03 12:35:11', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-12-03 12:35:11', '65.309613,55.398437', '2010-12-03 12:35:11', 'Куйбышева 137а', NULL, 'Длинное-длинное описание')[0m
+  [4;36;1mPlacemark Create (0.8ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:38:12', NULL, '2010-12-03 12:38:12', NULL, NULL, NULL)[0m
+  [4;35;1mPlacemark Create (0.5ms)[0m   [0mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES(NULL, '2010-12-03 12:38:12', NULL, '2010-12-03 12:38:12', NULL, NULL, NULL)[0m
+  [4;36;1mPlacemark Create (0.5ms)[0m   [0;1mINSERT INTO "placemarks" ("kind", "created_at", "geopoint", "updated_at", "adress", "foto", "description") VALUES('Яма', '2010-12-03 12:38:12', '65.309613,55.398437', '2010-12-03 12:38:12', 'Куйбышева 137а', NULL, 'Длинное-длинное описание')[0m
