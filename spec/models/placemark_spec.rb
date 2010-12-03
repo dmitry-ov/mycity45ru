@@ -28,7 +28,7 @@ describe Placemark do
      @placemark_full.save   
   end 
   
-  it "" do
+  it "should add to xml data from placemark attribute" do
     @placemark_full.add_to_xml() 
   end 
 
