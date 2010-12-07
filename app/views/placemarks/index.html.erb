@@ -3,7 +3,7 @@
 <head>
 <title> City  </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://api-maps.yandex.ru/1.1/index.xml?key=ANKfqUwBAAAAVlO6fAQAxO8Nexm5XAiGeMHqQs5D-sr9aw8AAAAAAAAAAAB0L7uxO8zeWf0eCCNAQCBftVxHTw==" type="text/javascript">
+<script type="text/javascript"  src="http://api-maps.yandex.ru/1.1/index.xml?key=ANKfqUwBAAAAVlO6fAQAxO8Nexm5XAiGeMHqQs5D-sr9aw8AAAAAAAAAAAB0L7uxO8zeWf0eCCNAQCBftVxHTw==&modules=pmap" charset="utf-8">
 </script>
 
 <script type="text/javascript">
@@ -11,29 +11,65 @@
 // Создание обработчика для события window.onLoad
     YMaps.jQuery(function () {
 // Создание экземпляра карты и его привязка к созданному контейнеру
-    var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
-// Установка для карты ее центра и масштаба
-    map.setCenter(new YMaps.GeoPoint( 65.3 , 55.4),  10 );
-    map.setType(YMaps.MapType.HYBRID);
-    map.enableScrollZoom();
-    map.addControl(new YMaps.Zoom());
-    map.addControl(new YMaps.ToolBar());
-    map.addControl(new YMaps.ScaleLine());
-    map.enableScrollZoom();
+
+//var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+  
+    // Установка для карты ее центра и масштаба
+    
+//    map.setCenter(new YMaps.GeoPoint( 65.3 , 55.4),  10 );
+//    map.setType(YMaps.MapType.HYBRID);
+//    map.enableScrollZoom();
+//    map.addControl(new YMaps.Zoom());
+//    map.addControl(new YMaps.ToolBar());
+//    map.addControl(new YMaps.ScaleLine());
+//    map.enableScrollZoom();
+    
+  //  peoplesMapScheme = new YMaps.Map( document.getElementById("YPeoplesMapScheme") );
+  //  peoplesMapScheme.setCenter(new YMaps.GeoPoint(37.64,55.76), 9, YMaps.MapType.PMAP);
+
+
+    peoplesMapHybrid = new YMaps.Map( document.getElementById("YPeoplesMapHybrid") );
+    peoplesMapHybrid.setCenter(new YMaps.GeoPoint(65.3,55.4) , 10, YMaps.MapType.PHYBRID);
+   
+    peoplesMapHybrid.addControl(new YMaps.TypeControl([YMaps.MapType.PMAP, YMaps.MapType.PHYBRID]));
+
+
+    peoplesMapHybrid.enableScrollZoom();
+    peoplesMapHybrid.addControl(new YMaps.Zoom());
+    peoplesMapHybrid.addControl(new YMaps.ToolBar());
+    peoplesMapHybrid.addControl(new YMaps.ScaleLine());
+    peoplesMapHybrid.enableScrollZoom();
+
+
+
+
+
 
     // Создание и добавление YMapsML-документа на карту
+  //  var ml = new YMaps.YMapsML('http://78.108.78.166/simpleobject.xml');
+  //  map.addOverlay(ml);
+    
     var ml = new YMaps.YMapsML('http://78.108.78.166/simpleobject.xml');
-    map.addOverlay(ml);
-// Обработчик неудачной загрузки YMapsML
+    peoplesMapHybrid.addOverlay(ml);
+
+    
+    // Обработчик неудачной загрузки YMapsML
     YMaps.Events.observe(ml, ml.Events.Fault, function (ml, error) {
                 alert('Ошибка: ' + error);
                 }); 
-    YMaps.Events.observe(map, map.Events.Click, function (map, mEvent) {
+  //  YMaps.Events.observe(map, map.Events.Click, function (map, mEvent) {
+    
+    YMaps.Events.observe( peoplesMapHybrid, peoplesMapHybrid.Events.Click,
+                           function ( peoplesMapHybrid , mEvent) {
+
 
       var myHtml ='<form action="/placemarks" id="new_placemark" method="post"><p><label for="placemark_kind">Тип метки:</label><br/><select size="1" name="placemark[kind]"><option selected value="Яма">Яма</option><option value="Открытый люк">Открытый люк</option></select><br/><p></p> <!-- <label for="placemark_address">Адрес</label><br /><input id="placemark_address" name="placemark[address]" size="20" type="text"/></p><p>  -->  <label for="placemark_description">Описание:</label><br /><textarea cols="16" id="placemark_description" name="placemark[description]" rows="4"></textarea></p><p> <!--<label for="placemark_foto">Фото</label><br />  <input id="placemark_foto" name="placemark[foto]" size="20" type="text" />  -->    </p><p><input id="placemark_geopoint" name="placemark[geopoint]" type="hidden" value="'+mEvent.getGeoPoint()+'"/> <input id="placemark_submit" name="commit" type="submit" value="Создать"/></p></form>';
 
 
-   map.openBalloon(mEvent.getGeoPoint(), myHtml);
+      // map.openBalloon(mEvent.getGeoPoint(), myHtml);
+
+      peoplesMapHybrid.openBalloon(mEvent.getGeoPoint(), myHtml);
+
  });	
   
     });
@@ -46,11 +82,14 @@
      cellpadding="2" cellspacing="2">
   <tbody>
   
+ <!--  <tr>
+       <td align="center"  ><div id="YMapsID" style="width:1000px;height:600px"></div></td>
+ </tr>
+ --> 
    <tr>
-      <td align="center"  ><div id="YMapsID" style="width:1000px;height:600px"></div></td>
+      <td align="center"  ><div id="YPeoplesMapHybrid" style="width:1000px;height:600px"></div></td>
    </tr>
 
-   
  </tbody>
  </table>
 <br>
