@@ -3,7 +3,7 @@ require "rexml/document"
 class Placemark < ActiveRecord::Base
 
 
- PATH_TO_XML =  "/home/d/src/mycity45ru/public/simpleobject.xml" 
+ PATH_TO_XML =  RAILS_ROOT + "/public/simpleobject.xml" 
 
   def add_to_xml
         file = File.open( PATH_TO_XML , 'r'){ |file| file.read }
@@ -38,6 +38,10 @@ class Placemark < ActiveRecord::Base
         File.open( PATH_TO_XML , 'w'){ |file| file.write doc.to_s }
 
    end 
+
+
+   validates_presence_of :kind, :geopoint, :description
+
 
 
 end
