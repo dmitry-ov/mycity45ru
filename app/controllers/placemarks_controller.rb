@@ -1,6 +1,8 @@
 class PlacemarksController < ApplicationController
   # GET /placemarks
   # GET /placemarks.xml
+
+
   def index
 =begin
     @placemarks = Placemark.all
@@ -11,6 +13,29 @@ class PlacemarksController < ApplicationController
     end
 =end
   end
+
+
+# Специально для сервиса Яндекс-Карты генерим XML  
+  def yml
+     path_xml = RAILS_ROOT + "/public/simpleobject.xml"
+     xml_text = File.open( path_xml , 'r'){ |file| file.read }
+       Placemark.all.each  do  |placemark|
+        xml_text = placemark.add_to_xml_text( xml_text)
+       end
+    render :xml => xml_text 
+  end
+
+  
+  def yml_auth
+     path_xml = RAILS_ROOT + "/public/simpleobject.xml"
+     xml_text = File.open( path_xml , 'r'){ |file| file.read }
+       Placemark.all.each  do  |placemark|
+       placemark.description += "<p><a href=http://78.108.78.166/placemarks/#{placemark.id}/edit>Редактировать метку</a></p>" 
+       xml_text = placemark.add_to_xml_text( xml_text)
+       end
+    render :xml => xml_text 
+  end
+
 
 
   # GET /placemarks/1
@@ -46,9 +71,11 @@ class PlacemarksController < ApplicationController
   def create
     @placemark = Placemark.new(params[:placemark])
 
+#    @placemark.description += "<a href='ya.ru'>"   
+
     respond_to do |format|
       if @placemark.save
-         @placemark.add_to_xml
+ #        @placemark.add_to_xml
         format.html { redirect_to(@placemark, :notice => 'Placemark was successfully created.') }
         format.xml  { render :xml => @placemark, :status => :created, :location => @placemark }
       else

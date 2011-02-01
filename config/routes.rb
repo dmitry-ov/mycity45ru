@@ -7,14 +7,16 @@ map.activate '/activate/:activation_code', :controller => 'users', :action => 'a
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
+
+  map.yml  'yml.xml', :controller => 'placemarks', :action => 'yml'
+  map.yml  'yml_auth.xml', :controller => 'placemarks', :action => 'yml_auth'
+
   map.resources :users
-
   map.resource :session
+  map.resources :placemarks
+  map.root :controller => 'placemarks', :action => 'index'
 
- 
-   map.root :controller => 'placemarks', :action => 'index'
-  
-   map.resources :placemarks
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 

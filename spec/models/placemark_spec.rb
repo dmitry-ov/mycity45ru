@@ -1,8 +1,13 @@
 require 'spec_helper'
 
 describe Placemark do
-  before(:each) do
 
+  before(:all) do
+    PATH_TO_XML =  RAILS_ROOT + "/public/simpleobject.xml"
+  end
+
+   
+  before(:each) do
     @valid_attributes = {
       :kind => 'Открытый люк', 
       :adress => 'ул.Пушкина д.5', 
@@ -11,15 +16,11 @@ describe Placemark do
       :foto => '/public/rails.png'
      }
   
-    PATH_TO_XML =  RAILS_ROOT + "/public/simpleobject.xml"
-
-
-    @placemark_full = Placemark.new(  :kind => 'Яма',
+    @placemark_full = Placemark.new( :kind => 'Яма',
                                      :adress =>'Куйбышева 137а',
                                      :geopoint =>'65.309613,55.398437',
                                      :description => 'Длинное-длинное описание',
                                      :foto => '/public/rails.png' ) 
-
    end
 
   it "should create a new instance given valid attributes" do
