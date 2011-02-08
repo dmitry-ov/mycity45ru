@@ -3,6 +3,7 @@ require "rexml/document"
 class Placemark < ActiveRecord::Base
 
 
+
  PATH_TO_XML =  RAILS_ROOT + "/public/simpleobject.xml" 
   
   # Вставка данных о конкретной метке в XML файл.

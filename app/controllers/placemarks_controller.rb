@@ -40,7 +40,6 @@ class PlacemarksController < ApplicationController
 
   # GET /placemarks/1
   # GET /placemarks/1.xml
-
   def show
     @placemark = Placemark.find(params[:id])
 
@@ -63,7 +62,12 @@ class PlacemarksController < ApplicationController
 
   # GET /placemarks/1/edit
   def edit
-    @placemark = Placemark.find(params[:id])
+     if logged_in? 
+       @placemark = Placemark.find(params[:id])
+     else 
+       #render :status => :forbidden
+       render :text => "500"
+     end
   end
 
   # POST /placemarks

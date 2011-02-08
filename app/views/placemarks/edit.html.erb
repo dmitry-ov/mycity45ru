@@ -1,36 +1,37 @@
-<% if logged_in? %>
-
 <h1>Editing placemark</h1>
 
 <% form_for(@placemark) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :kind %><br />
+    <%= f.label "Тип метки" %><br />
     <%= f.text_field :kind %>
   </p>
   <p>
-    <%= f.label :adress %><br />
+    <%= f.label "Адрес" %><br />
     <%= f.text_field :adress %>
   </p>
   <p>
-    <%= f.label :geopoint %><br />
+    <%= f.label "Координата" %><br />
     <%= f.text_field :geopoint %>
   </p>
   <p>
-    <%= f.label :description %><br />
+    <%= f.label "Описание" %><br />
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.label :foto %><br />
+    <%= f.label "Фото" %><br />
     <%= f.text_field :foto %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Обновить' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @placemark %> |
+<%= link_to 'Просмотр', @placemark %> |
 <%= link_to 'К карте', placemarks_path %>
 
-<% end %>
+
+
+
+

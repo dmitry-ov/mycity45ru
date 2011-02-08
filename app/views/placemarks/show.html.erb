@@ -1,28 +1,28 @@
 <p>
-  <b>Kind:</b>
+  <b>Тип метки:</b>
   <%=h @placemark.kind %>
 </p>
 
 <p>
-  <b>Adress:</b>
+  <b>Адрес:</b>
   <%=h @placemark.adress %>
 </p>
 
 <p>
-  <b>Geopoint:</b>
+  <b>Координата:</b>
   <%=h @placemark.geopoint %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Описание:</b>
   <%=h @placemark.description %>
 </p>
 
 <p>
-  <b>Foto:</b>
+  <b>Фото:</b>
   <%=h @placemark.foto %>
 </p>
 
 
-<%= link_to 'Edit', edit_placemark_path(@placemark) %> |
+<%= link_to 'Редактировать', edit_placemark_path(@placemark) %> |
 <%= link_to 'К карте', placemarks_path %>
