@@ -9,16 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101115130426) do
+ActiveRecord::Schema.define(:version => 20110217161036) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "placemarks", :force => true do |t|
-    t.string   "kind"
     t.string   "adress"
     t.string   "geopoint"
     t.text     "description"
     t.string   "foto"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category"
   end
 
   create_table "users", :force => true do |t|

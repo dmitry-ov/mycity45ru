@@ -1,7 +1,6 @@
 class CreatePlacemarks < ActiveRecord::Migration
   def self.up
     create_table :placemarks do |t|
-      t.string :kind
       t.string :adress
       t.string :geopoint
       t.text :description
