@@ -4,10 +4,12 @@
 <% form_for(@placemark) do |f| %>
   <%= f.error_messages %>
 
-  <p>
-    <%= f.label "Тип метки" %><br />
-    <%= f.text_field :kind %>
+   <p>
+   <% Category.all.each do |c|  %>     
+   <input id="placemark_category_id" name="placemark[category_id]" type="radio" value=<%=c.id%> <%= (Category.all.first==c ? "checked" : "")%> > <%=c.name%> <br />
+   <% end %>
   </p>
+
   <p>
     <%= f.label "Адрес" %><br />
     <%= f.text_field :adress %>

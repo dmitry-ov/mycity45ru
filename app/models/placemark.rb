@@ -6,7 +6,7 @@ class Placemark < ActiveRecord::Base
 
   PATH_TO_XML =  RAILS_ROOT + "/public/simpleobject.xml" 
   
-  validates_presence_of  :geopoint 
+  validates_presence_of  :geopoint, :category_id, :category 
 
 
   def add_to_xml_text xml_text
@@ -17,12 +17,16 @@ class Placemark < ActiveRecord::Base
         geo_object_element = REXML::Element.new "ymaps:GeoObject" 
         feature_members.add_element  geo_object_element
 
-          #~ gml:name  - Название метки
-          gml_name_element  =  REXML::Element.new "gml:name"
-          #gml_name_element.text = self.kind  #
-          gml_name_element.text = self.category.name.to_s 
+        #~ gml:name  - Название метки
+        gml_name_element  =  REXML::Element.new "gml:name"
+        #gml_name_element.text = self.kind  #
+           unless self.category?
+            gml_name_element.text = nil 
+           else 
+            gml_name_element.text = self.category.name 
+           end
           geo_object_element.add_element  gml_name_element
-       
+
           #~ gml:description  -  Описание метки 
           gml_description_element  = REXML:: Element.new "gml:description"
           gml_description_element.text = self.description #

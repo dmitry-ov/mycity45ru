@@ -75,11 +75,12 @@ class PlacemarksController < ApplicationController
   def create
     @placemark = Placemark.new(params[:placemark])
 
-#    @placemark.description += "<a href='ya.ru'>"   
+      begin
+        @placemark.category = Category.find(@placemark.category_id)
+      end
 
     respond_to do |format|
       if @placemark.save
- #        @placemark.add_to_xml
         format.html { redirect_to(@placemark, :notice => 'Placemark was successfully created.') }
         format.xml  { render :xml => @placemark, :status => :created, :location => @placemark }
       else

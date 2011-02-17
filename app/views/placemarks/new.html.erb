@@ -1,12 +1,14 @@
-<h1>New placemark</h1>
+<h1>Новая метка</h1>
 
 <% form_for(@placemark) do |f| %>
   <%= f.error_messages %>
-
+  
   <p>
-    <%= f.label :kind %><br />
-    <%= f.text_field :kind %>
+  <% Category.all.each do |c|  %>     
+  <input id="placemark_category_id" name="placemark[category_id]" type="radio" value=<%=c.id%> <%= (Category.all.first==c ? "checked" : "")%> > <%=c.name%> <br />
+   <% end %>
   </p>
+  
   <p>
     <%= f.label :adress %><br />
     <%= f.text_field :adress %>
