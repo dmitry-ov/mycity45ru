@@ -20,11 +20,11 @@ class Placemark < ActiveRecord::Base
         #~ gml:name  - Название метки
         gml_name_element  =  REXML::Element.new "gml:name"
         #gml_name_element.text = self.kind  #
-           unless self.category?
-            gml_name_element.text = nil 
-           else 
+           #unless self.category?
+           #gml_name_element.text = nil 
+           #else 
             gml_name_element.text = self.category.name 
-           end
+           #end
           geo_object_element.add_element  gml_name_element
 
           #~ gml:description  -  Описание метки 
