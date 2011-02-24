@@ -23528,3 +23528,1104 @@ Rendering placemarks/new
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
   [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
 Completed in 93ms (View: 80, DB: 1) | 200 OK [http://78.108.78.166/placemarks/new]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-18 08:28:33) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-18 08:28:34) [GET]
+  [4;36;1mPlacemark Load (3.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 435ms (View: 4, DB: 3) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-18 08:28:37) [GET]
+Rendering sessions/new
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-18 08:28:39) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"hYYk2Kv6y0weyGScrn6nC/jTg4oRSAxcJOjRMNRS8yo=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Fri, 18 Feb 2011 08:28:39 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 811ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-18 08:28:40) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-18 08:28:40) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 119ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.228.105 at 2011-02-18 08:28:57) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Ям\320\260", "geopoint"=>"65.277341,55.469883", "description"=>"fdg"}, "commit"=>"Создат\321\214"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: kind):
+  app/controllers/placemarks_controller.rb:76:in `new'
+  app/controllers/placemarks_controller.rb:76:in `create'
+
+Rendered rescues/_trace (53.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-20 00:55:04) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-20 00:55:05) [GET]
+  [4;36;1mPlacemark Load (2.9ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 445ms (View: 4, DB: 3) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-20 00:56:29) [GET]
+Rendering sessions/new
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-20 00:56:30) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"X86L5r8C6AM/M3x3e6tcMgsFv0KdvHWRheW3nar/McA=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Sun, 20 Feb 2011 00:56:30 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 1410ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-20 00:56:32) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-20 00:56:32) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 118ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:10:59) [GET]
+
+ActionController::RoutingError (No route matches "//phpmyadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:03) [GET]
+
+ActionController::RoutingError (No route matches "//pma/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:03) [GET]
+
+ActionController::RoutingError (No route matches "//dbadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:04) [GET]
+
+ActionController::RoutingError (No route matches "//myadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:05) [GET]
+
+ActionController::RoutingError (No route matches "//phppgadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:05) [GET]
+
+ActionController::RoutingError (No route matches "//PMA/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:06) [GET]
+
+ActionController::RoutingError (No route matches "//admin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 219.232.237.151 at 2011-02-20 14:11:07) [GET]
+
+ActionController::RoutingError (No route matches "//MyAdmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 69.70.147.106 at 2011-02-21 02:52:49) [GET]
+
+ActionController::RoutingError (No route matches "/webdav/test" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 82.197.208.149 at 2011-02-21 03:42:38) [GET]
+
+ActionController::RoutingError (No route matches "/webdav/test" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 212.227.28.113 at 2011-02-21 08:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/webdav/test" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 95.211.8.147 at 2011-02-21 09:48:59) [GET]
+
+ActionController::RoutingError (No route matches "/user/soapCaller.bs" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 201.49.216.196 at 2011-02-21 21:21:37) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.sina.com.cn/]
+
+
+Processing ApplicationController#index (for 193.107.89.110 at 2011-02-22 14:56:16) [GET]
+
+ActionController::RoutingError (No route matches "/w00tw00t.at.ISC.SANS.DFind:)" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-23 02:17:30) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-23 02:17:31) [GET]
+  [4;36;1mPlacemark Load (2.6ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 123ms (View: 1, DB: 3) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing ApplicationController#index (for 91.213.255.192 at 2011-02-23 17:13:53) [GET]
+
+ActionController::RoutingError (No route matches "/webdav/test" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 212.36.6.246 at 2011-02-23 17:27:06) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.google.com/]
+
+
+Processing PlacemarksController#index (for 212.36.6.246 at 2011-02-23 17:28:46) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.google.com/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-24 00:02:10) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-24 00:02:12) [GET]
+  [4;35;1mPlacemark Load (2.5ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 124ms (View: 1, DB: 3) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-24 21:13:44) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-24 21:13:46) [GET]
+  [4;36;1mPlacemark Load (2.5ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 117ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:15:21) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-24 21:15:22) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 117ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.21.243 at 2011-02-24 21:17:05) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:17:07) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"sdc", "password"=>"dcd"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'sdc' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'sdc' from 172.16.21.243 at Thu Feb 24 13:17:07 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:17:09) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"sdc", "password"=>"d"}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'sdc' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'sdc' from 172.16.21.243 at Thu Feb 24 13:17:09 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-24 21:17:11) [GET]
+  [4;36;1mPlacemark Load (2.1ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 115ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing UsersController#new (for 172.16.21.243 at 2011-02-24 21:17:12) [GET]
+Rendering users/new
+Completed in 23ms (View: 17, DB: 0) | 200 OK [http://78.108.78.166/signup]
+
+
+Processing UsersController#create (for 172.16.21.243 at 2011-02-24 21:17:25) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "user"=>{"password_confirmation"=>"123456", "password"=>"123456", "login"=>"HiMiC", "email"=>"himic5@yandex.ru"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."login" = 'himic') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'himic5@yandex.ru') LIMIT 1[0m
+  [4;35;1mUser Create (1.3ms)[0m   [0mINSERT INTO "users" ("name", "salt", "created_at", "activated_at", "crypted_password", "remember_token_expires_at", "updated_at", "activation_code", "remember_token", "login", "email") VALUES('', '4c5bdd99a7c4d7ca0358c97cc33504e6c3c589c9', '2011-02-24 13:17:25', NULL, 'a56c446baf0afce2da6e3499248d93ba0f95ecf2', NULL, '2011-02-24 13:17:25', 'd73e96b5e152ce3e9174bdb1e054eeaa2b7613c4', NULL, 'himic', 'himic5@yandex.ru')[0m
+Sent mail to himic5@yandex.ru
+
+Date: Thu, 24 Feb 2011 21:17:25 +0800
+From: finexp@mail.ru
+To: himic5@yandex.ru
+Subject: Active key Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: himic
+  Password: 123456
+
+Visit this url to activate your account:
+
+  http://78.108.78.166/activate/d73e96b5e152ce3e9174bdb1e054eeaa2b7613c4
+Redirected to http://78.108.78.166/
+Completed in 1510ms (DB: 2) | 302 Found [http://78.108.78.166/users]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:17:26) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-24 21:17:27) [GET]
+  [4;36;1mPlacemark Load (2.1ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 119ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing UsersController#activate (for 172.16.21.243 at 2011-02-24 21:17:58) [GET]
+  Parameters: {"activation_code"=>"d73e96b5e152ce3e9174bdb1e054eeaa2b7613c4"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."activation_code" = 'd73e96b5e152ce3e9174bdb1e054eeaa2b7613c4') LIMIT 1[0m
+  [4;36;1mUser Update (0.8ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-02-24 13:17:58', "activated_at" = '2011-02-24 13:17:58', "activation_code" = NULL WHERE "id" = 2[0m
+Sent mail to himic5@yandex.ru
+
+Date: Thu, 24 Feb 2011 21:17:58 +0800
+From: finexp@mail.ru
+To: himic5@yandex.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+himic, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/login
+Completed in 695ms (DB: 2) | 302 Found [http://78.108.78.166/activate/d73e96b5e152ce3e9174bdb1e054eeaa2b7613c4]
+
+
+Processing SessionsController#new (for 172.16.21.243 at 2011-02-24 21:17:59) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:13) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"himic", "password"=>"123456"}
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'himic' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to himic5@yandex.ru
+
+Date: Thu, 24 Feb 2011 21:18:13 +0800
+From: finexp@mail.ru
+To: himic5@yandex.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+himic, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 859ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:18:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-24 21:18:14) [GET]
+  [4;35;1mPlacemark Load (2.1ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 180ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:25) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"HiMiC", "password"=>"123456"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'HiMiC' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'HiMiC' from 172.16.21.243 at Thu Feb 24 13:18:25 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:28) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"HiMiC", "password"=>"123456"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'HiMiC' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'HiMiC' from 172.16.21.243 at Thu Feb 24 13:18:28 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:33) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"HiMiC", "password"=>"123456"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'HiMiC' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'HiMiC' from 172.16.21.243 at Thu Feb 24 13:18:33 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:18:36) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-24 21:18:36) [GET]
+  [4;35;1mPlacemark Load (2.3ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 175ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.21.243 at 2011-02-24 21:18:38) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:44) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"HiMiC", "password"=>"123456"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'HiMiC' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'HiMiC' from 172.16.21.243 at Thu Feb 24 13:18:44 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:47) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"HiMiC", "password"=>"123456"}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'HiMiC' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'HiMiC' from 172.16.21.243 at Thu Feb 24 13:18:47 UTC 2011
+Rendering sessions/new
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:18:52) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"himic", "password"=>"123456"}
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'himic' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to himic5@yandex.ru
+
+Date: Thu, 24 Feb 2011 21:18:52 +0800
+From: finexp@mail.ru
+To: himic5@yandex.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+himic, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 724ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:18:53) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-24 21:18:54) [GET]
+  [4;36;1mPlacemark Load (2.6ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 125ms (View: 1, DB: 3) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing UsersController#show (for 172.16.21.243 at 2011-02-24 21:19:45) [GET]
+  Parameters: {"id"=>"2"}
+
+ActionController::UnknownAction (No action responded to show. Actions: activate, create, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-24 21:19:47) [GET]
+  [4;35;1mPlacemark Load (2.1ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 120ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing UsersController#activate (for 172.16.21.243 at 2011-02-24 21:27:47) [GET]
+  Parameters: {"activation_code"=>"d73e96b5e152ce3e9174bdb1e054eeaa2b7613c4"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."activation_code" = 'd73e96b5e152ce3e9174bdb1e054eeaa2b7613c4') LIMIT 1[0m
+Redirected to http://78.108.78.166/
+Completed in 7ms (DB: 0) | 302 Found [http://78.108.78.166/activate/d73e96b5e152ce3e9174bdb1e054eeaa2b7613c4]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:27:47) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-24 21:27:48) [GET]
+  [4;35;1mPlacemark Load (2.1ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 115ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.21.243 at 2011-02-24 21:27:59) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:28:06) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"himic", "password"=>"123456'"}
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'himic' and activated_at IS NOT NULL) LIMIT 1[0m
+Failed login for 'himic' from 172.16.21.243 at Thu Feb 24 13:28:06 UTC 2011
+Rendering sessions/new
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.21.243 at 2011-02-24 21:28:10) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"IoF7jObrn9hlBLsJ7IUukDzWyf/xQSULCLVemdhzQMY=", "login"=>"himic", "password"=>"123456"}
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'himic' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to himic5@yandex.ru
+
+Date: Thu, 24 Feb 2011 21:28:10 +0800
+From: finexp@mail.ru
+To: himic5@yandex.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+himic, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 724ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.21.243 at 2011-02-24 21:28:11) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.157 at 2011-02-24 21:28:11) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 122ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.21.243 at 2011-02-24 21:28:24) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Открытый лю\320\272", "geopoint"=>"65.335791,55.374984", "description"=>"g4"}, "commit"=>"Создат\321\214"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: kind):
+  app/controllers/placemarks_controller.rb:76:in `new'
+  app/controllers/placemarks_controller.rb:76:in `create'
+
+Rendered rescues/_trace (54.5ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-24 22:33:37) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-24 22:33:38) [GET]
+  [4;36;1mPlacemark Load (2.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 187ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-24 22:33:59) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-24 22:34:01) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"smre3Yvv0hgPfvmV3Nc3iPbaoSwSnxYW4hUFUfCiPAU=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Thu, 24 Feb 2011 22:34:01 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 1025ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-24 22:34:02) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-24 22:34:03) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 177ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.228.105 at 2011-02-24 22:34:06) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Ям\320\260", "geopoint"=>"65.326093,55.403907", "description"=>""}, "commit"=>"Создат\321\214"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: kind):
+  app/controllers/placemarks_controller.rb:76:in `new'
+  app/controllers/placemarks_controller.rb:76:in `create'
+
+Rendered rescues/_trace (108.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-24 22:34:13) [GET]
+  [4;36;1mPlacemark Load (2.1ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 119ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 03:52:50) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-25 03:52:52) [GET]
+  [4;35;1mPlacemark Load (2.7ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 183ms (View: 1, DB: 3) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:43) [GET]
+
+ActionController::RoutingError (No route matches "//phpmyadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:44) [GET]
+
+ActionController::RoutingError (No route matches "//phpMyAdmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:44) [GET]
+
+ActionController::RoutingError (No route matches "//admin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:44) [GET]
+
+ActionController::RoutingError (No route matches "//dbadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:45) [GET]
+
+ActionController::RoutingError (No route matches "//myadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:45) [GET]
+
+ActionController::RoutingError (No route matches "//mysql/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:45) [GET]
+
+ActionController::RoutingError (No route matches "//mysqladmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:45) [GET]
+
+ActionController::RoutingError (No route matches "//phpadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:46) [GET]
+
+ActionController::RoutingError (No route matches "//pma/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:46) [GET]
+
+ActionController::RoutingError (No route matches "//phpdb/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:46) [GET]
+
+ActionController::RoutingError (No route matches "//db/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:46) [GET]
+
+ActionController::RoutingError (No route matches "//mysqladmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:47) [GET]
+
+ActionController::RoutingError (No route matches "//SQL/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:47) [GET]
+
+ActionController::RoutingError (No route matches "//padmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:47) [GET]
+
+ActionController::RoutingError (No route matches "//pmadmin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 194.79.22.142 at 2011-02-25 03:57:47) [GET]
+
+ActionController::RoutingError (No route matches "//webdb/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-25 04:19:18) [GET]
+Rendering sessions/new
+Completed in 68ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-25 04:19:19) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Fri, 25 Feb 2011 04:19:19 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 720ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:19:20) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:19:20) [GET]
+  [4;36;1mPlacemark Load (2.2ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 183ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.228.105 at 2011-02-25 04:19:24) [POST]
+  Parameters: {"placemark"=>{"kind"=>"Ям\320\260", "geopoint"=>"65.302747,55.403907", "description"=>""}, "commit"=>"Создат\321\214"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: kind):
+  app/controllers/placemarks_controller.rb:76:in `new'
+  app/controllers/placemarks_controller.rb:76:in `create'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PlacemarksController#new (for 172.16.228.105 at 2011-02-25 04:24:10) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/new
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 44ms (View: 32, DB: 1) | 200 OK [http://78.108.78.166/placemarks/new]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:28:23) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:29:21) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:29:22) [GET]
+  [4;35;1mPlacemark Load (2.6ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 129ms (View: 1, DB: 3) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:31:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-25 04:31:14) [GET]
+  [4;35;1mPlacemark Load (2.1ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 120ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:31:51) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:31:52) [GET]
+  [4;35;1mPlacemark Load (2.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 118ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.228.105 at 2011-02-25 04:32:24) [POST]
+  Parameters: {"placemark"=>{"geopoint"=>"6547", "adress"=>"ytu", "foto"=>"k", "category_id"=>"1", "description"=>"54675647567"}, "commit"=>"Create", "authenticity_token"=>"jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc="}
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mPlacemark Create (0.8ms)[0m   [0mINSERT INTO "placemarks" ("created_at", "category", "geopoint", "updated_at", "adress", "foto", "category_id", "description") VALUES('2011-02-24 20:32:24', NULL, '6547', '2011-02-24 20:32:24', 'ytu', 'k', 1, '54675647567')[0m
+Redirected to http://78.108.78.166/placemarks/16
+Completed in 36ms (DB: 1) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 172.16.228.105 at 2011-02-25 04:32:24) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mPlacemark Load (0.5ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 16) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 99ms (View: 76, DB: 2) | 200 OK [http://78.108.78.166/placemarks/16]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:38:48) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:40:34) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.157 at 2011-02-25 04:40:35) [GET]
+  [4;35;1mPlacemark Load (2.3ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 204ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:41:30) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:41:31) [GET]
+  [4;35;1mPlacemark Load (2.3ms)[0m   [0mSELECT * FROM "placemarks" [0m
+Completed in 190ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:41:50) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:46:20) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:46:21) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 197ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:46:53) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:46:54) [GET]
+  [4;36;1mPlacemark Load (2.2ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 190ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:47:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:47:14) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 194ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:47:56) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:47:56) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 202ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:48:24) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:48:25) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 135ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:48:47) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:48:47) [GET]
+  [4;36;1mPlacemark Load (2.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 136ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:49:18) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:49:19) [GET]
+  [4;36;1mPlacemark Load (2.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 137ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:49:59) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:50:00) [GET]
+  [4;36;1mPlacemark Load (2.2ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 135ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:50:30) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:50:30) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 135ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:50:41) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:50:42) [GET]
+  [4;36;1mPlacemark Load (2.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 193ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:50:49) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:50:50) [GET]
+  [4;36;1mPlacemark Load (2.3ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 194ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 04:51:14) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.158 at 2011-02-25 04:51:15) [GET]
+  [4;36;1mPlacemark Load (2.4ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+Completed in 192ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#create (for 172.16.228.105 at 2011-02-25 04:51:25) [POST]
+  Parameters: {"placemark"=>{"geopoint"=>"65.349439,55.389839", "adress"=>"", "category_id"=>"1", "description"=>""}, "commit"=>"Create", "authenticity_token"=>"jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc="}
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mPlacemark Create (0.7ms)[0m   [0;1mINSERT INTO "placemarks" ("created_at", "category", "geopoint", "updated_at", "adress", "foto", "category_id", "description") VALUES('2011-02-24 20:51:25', NULL, '65.349439,55.389839', '2011-02-24 20:51:25', '', NULL, 1, '')[0m
+Redirected to http://78.108.78.166/placemarks/17
+Completed in 47ms (DB: 1) | 302 Found [http://78.108.78.166/placemarks]
+
+
+Processing PlacemarksController#show (for 172.16.228.105 at 2011-02-25 04:51:25) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPlacemark Load (0.6ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 17) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/show
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 29ms (View: 16, DB: 2) | 200 OK [http://78.108.78.166/placemarks/17]
