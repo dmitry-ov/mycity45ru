@@ -1,5 +1,5 @@
 
-<h1>Editing placemark</h1>
+<h1>Редактирование метки</h1>
 
 <% form_for(@placemark) do |f| %>
   <%= f.error_messages %>
@@ -17,7 +17,7 @@
   <p>
     <%= f.label "Координата" %><br />
     <%= f.text_field :geopoint, :disabled=>"disabled" %>
-  </p> 
+
   <p>
     <%= f.label "Описание" %><br />
     <%= f.text_area :description %>
@@ -26,6 +26,7 @@
     <%= f.label "Фото" %><br />
     <%= f.text_field :foto %>
   </p>
+
   <p>
     <%= f.submit 'Обновить' %>
   </p>

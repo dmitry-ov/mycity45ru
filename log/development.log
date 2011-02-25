@@ -25543,3 +25543,924 @@ Rendering placemarks/edit
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
 Completed in 39ms (View: 22, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#edit (for 172.16.228.105 at 2011-02-25 06:16:03) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPlacemark Load (0.5ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 19) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+  [4;35;1mCategory Load (0.8ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Completed in 53ms (View: 31, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#edit (for 172.16.228.105 at 2011-02-25 06:18:09) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPlacemark Load (0.6ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 19) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Completed in 49ms (View: 26, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#edit (for 172.16.228.105 at 2011-02-25 06:21:15) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mPlacemark Load (0.7ms)[0m   [0;1mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 19) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+  [4;35;1mCategory Load (0.7ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+Completed in 57ms (View: 35, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#edit (for 172.16.228.105 at 2011-02-25 06:21:43) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPlacemark Load (0.8ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 19) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+  [4;36;1mCategory Load (0.8ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Completed in 55ms (View: 34, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 06:32:16) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-25 06:32:18) [GET]
+  [4;35;1mPlacemark Load (1.4ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 27ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-25 06:33:05) [GET]
+Rendering sessions/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-25 06:33:06) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"MTewZk8MTgAqRlpSiKCxkQzRoP2DlCPSCos14IeJEdY=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Fri, 25 Feb 2011 06:33:06 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 30041ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-25 06:33:36) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"MTewZk8MTgAqRlpSiKCxkQzRoP2DlCPSCos14IeJEdY=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Fri, 25 Feb 2011 06:33:36 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 30036ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 06:34:06) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-25 06:34:07) [GET]
+  [4;36;1mPlacemark Load (1.0ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 25ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
+
+
+Processing PlacemarksController#edit (for 172.16.228.105 at 2011-02-25 06:35:13) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mPlacemark Load (0.6ms)[0m   [0mSELECT * FROM "placemarks" WHERE ("placemarks"."id" = 19) [0m
+Rendering template within layouts/placemarks
+Rendering placemarks/edit
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Completed in 43ms (View: 26, DB: 2) | 200 OK [http://78.108.78.166/placemarks/19/edit]
+
+
+Processing PlacemarksController#index (for 188.165.247.215 at 2011-02-25 09:08:02) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://:/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 20:42:22) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-25 20:42:24) [GET]
+  [4;35;1mPlacemark Load (1.4ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 29ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 20:42:29) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.158 at 2011-02-25 20:42:30) [GET]
+  [4;35;1mPlacemark Load (1.2ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 26ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:26:58) [GET]
+
+ActionController::RoutingError (No route matches "/PMA2005/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:26:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:26:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/pma/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:00) [GET]
+
+ActionController::RoutingError (No route matches "/db/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:01) [GET]
+
+ActionController::RoutingError (No route matches "/dbadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:01) [GET]
+
+ActionController::RoutingError (No route matches "/myadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:01) [GET]
+
+ActionController::RoutingError (No route matches "/mysql-admin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:02) [GET]
+
+ActionController::RoutingError (No route matches "/mysql/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:05) [GET]
+
+ActionController::RoutingError (No route matches "/mysqlmanager/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:09) [GET]
+
+ActionController::RoutingError (No route matches "/php-my-admin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:09) [GET]
+
+ActionController::RoutingError (No route matches "/php-myadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:10) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.2.3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:10) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.2.6/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:11) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:11) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.4/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:12) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.5-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:12) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.5-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:13) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.5-rc2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:13) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.5/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.6-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.6-rc2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.6/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.7-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.5.7/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:16) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-alpha/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:19) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-beta1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:20) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-beta2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:20) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:21) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-pl2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:21) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-pl3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:22) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:22) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-rc2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:23) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0-rc3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:23) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.0/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:24) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:24) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1-pl2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:24) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1-pl3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:25) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:25) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1-rc2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:26) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:26) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.2-beta1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:27) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.2-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:27) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.2-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:28) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:29) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.3-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:29) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.3-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:30) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:30) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:31) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4-pl2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:31) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4-pl3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:32) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4-pl4/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:32) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:33) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.6.4/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:33) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.7.0-beta1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:34) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.7.0-pl1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:34) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.7.0-pl2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:34) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.7.0-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:38) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0-beta1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:38) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:39) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0-rc2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:42) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0.2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:43) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0.3/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:43) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.0.4/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.1-rc1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:48) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2.8.2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:48) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin-2/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:49) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:49) [GET]
+
+ActionController::RoutingError (No route matches "/phpadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:50) [GET]
+
+ActionController::RoutingError (No route matches "/phpmanager/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:50) [GET]
+
+ActionController::RoutingError (No route matches "/phpmy-admin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:50) [GET]
+
+ActionController::RoutingError (No route matches "/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:51) [GET]
+
+ActionController::RoutingError (No route matches "/phpmyadmin1/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:54) [GET]
+
+ActionController::RoutingError (No route matches "/pma/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:55) [GET]
+
+ActionController::RoutingError (No route matches "/pma2005/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:55) [GET]
+
+ActionController::RoutingError (No route matches "/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:56) [GET]
+
+ActionController::RoutingError (No route matches "/sqlmanager/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:56) [GET]
+
+ActionController::RoutingError (No route matches "/sqlweb/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:57) [GET]
+
+ActionController::RoutingError (No route matches "/typo3/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:58) [GET]
+
+ActionController::RoutingError (No route matches "/web/phpMyAdmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:58) [GET]
+
+ActionController::RoutingError (No route matches "/web/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:59) [GET]
+
+ActionController::RoutingError (No route matches "/web/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:27:59) [GET]
+
+ActionController::RoutingError (No route matches "/webadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:28:00) [GET]
+
+ActionController::RoutingError (No route matches "/webdb/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:28:00) [GET]
+
+ActionController::RoutingError (No route matches "/websql/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.23.20.160 at 2011-02-25 21:28:01) [GET]
+
+ActionController::RoutingError (No route matches "/xampp/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 22:07:57) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-25 22:07:59) [GET]
+  [4;35;1mPlacemark Load (1.3ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 27ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 22:08:11) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 22:08:20) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.156 at 2011-02-25 22:08:20) [GET]
+  [4;35;1mPlacemark Load (1.1ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 26ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 172.16.228.105 at 2011-02-25 22:08:24) [GET]
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 172.16.228.105 at 2011-02-25 22:08:26) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"uf2XDDf2eMHSf9O0nX+SWiI8IvnmLr1UXKdX7Ej32XY=", "login"=>"dio", "password"=>"linuxbsd"}
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE (login = 'dio' and activated_at IS NOT NULL) LIMIT 1[0m
+Sent mail to finexp@mail.ru
+
+Date: Fri, 25 Feb 2011 22:08:26 +0800
+From: finexp@mail.ru
+To: finexp@mail.ru
+Subject: Active key Your account has been activated!
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+dio, your account has been activated.  Welcome aboard!
+
+  http://78.108.78.166/
+Redirected to http://78.108.78.166/
+Completed in 2326ms (DB: 1) | 302 Found [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 172.16.228.105 at 2011-02-25 22:08:28) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 68ms (View: 65, DB: 1) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml_auth (for 77.88.40.156 at 2011-02-25 22:08:30) [GET]
+  [4;35;1mPlacemark Load (1.0ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+Completed in 26ms (View: 1, DB: 2) | 200 OK [http://78.108.78.166/yml_auth.xml]
