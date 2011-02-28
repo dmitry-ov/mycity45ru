@@ -1,0 +1,60 @@
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-02-28 18:04:26) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-28 18:04:27) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: placemarks: SELECT * FROM "placemarks" ):
+  app/controllers/placemarks_controller.rb:22:in `yml'
+
+Rendering /home/d/src/mycity45ru/public/500.html (500 Internal Server Error)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-02-28 18:04:48) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-28 18:04:49) [GET]
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#yml (for 78.108.78.166 at 2011-02-28 18:04:58) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-02-28 18:05:01) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-28 18:05:01) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://78.108.78.166/yml.xml]
+
+
+Processing SessionsController#new (for 78.108.78.166 at 2011-02-28 18:05:04) [GET]
+Rendering sessions/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://78.108.78.166/login]
+
+
+Processing SessionsController#create (for 78.108.78.166 at 2011-02-28 18:05:08) [POST]
+  Parameters: {"commit"=>"Вхо\320\264", "authenticity_token"=>"DZu+5HiaK5BZScehic9Xh/2iFBy/hynHgn9Rh1A+1wQ=", "login"=>"dio", "password"=>"linuxbsd"}
+Failed login for 'dio' from 78.108.78.166 at Mon Feb 28 10:05:08 UTC 2011
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/session]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-02-28 18:05:11) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-02-28 18:05:11) [GET]
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://78.108.78.166/yml.xml]
