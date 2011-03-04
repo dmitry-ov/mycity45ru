@@ -19,7 +19,7 @@ class PlacemarksController < ApplicationController
   end
 
   def history 
-    render :layout => false 
+    #render :layout => false 
   end
 
 # Специально для сервиса Яндекс-Карты генерим XML  
