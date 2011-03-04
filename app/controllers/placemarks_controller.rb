@@ -27,7 +27,7 @@ class PlacemarksController < ApplicationController
      path_xml = RAILS_ROOT + "/public/simpleobject.xml"
      xml_text = File.open( path_xml , 'r'){ |file| file.read }
        Placemark.all.each  do  |placemark|
-        placemark.description = "<p>#{placemark.adress}</p><p>#{placemark.description}</p>"  
+        placemark.description = "#{placemark.adress}<br>#{placemark.description}"  
         xml_text = placemark.add_to_xml_text( xml_text)
        end
     render :xml => xml_text 

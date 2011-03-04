@@ -6,6 +6,11 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
+.registration_form {
+    margin-left: 240px  
+}
+
+
 pre {
   background-color: #eee;
   padding: 10px;
