@@ -31947,3 +31947,9 @@ Rendering template within layouts/placemarks
 Rendering placemarks/history
   [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
 Completed in 10ms (View: 8, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 79.172.59.250 at 2011-03-04 11:30:51) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://mycity45.ru/history]
