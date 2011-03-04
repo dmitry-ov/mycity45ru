@@ -7,7 +7,6 @@
   <title> Дороги Кургана </title>
 
   <%= stylesheet_link_tag 'scaffold' %>
-  <!--  </head> --> 
 </head>
 <body>
 
@@ -20,7 +19,7 @@
 </div> 
 
 <% else -%>
-<!--<div id="user-bar-greeting"> <%= link_to_login_with_IP 'Not logged in', :style => 'border: none;' %> </div> --> 
+<div id="user-bar-greeting"><!--<%= link_to_login_with_IP 'Логин по IP',:style=>'border: none;'%>--></div> 
   <div id="user-bar-action"  ><%= link_to "Вход",  login_path,  { :title => "Вход" } %> /
     <%= link_to "Регистрация", signup_path, { :title => "Создать учетную  запись" } %> 
   <div style="color: green" align ="center"> 
@@ -29,13 +28,17 @@
   </div>
 <% end -%>
 <%= yield %>
- <table align=center width=100% border="0" cellpadding="1" cellspacing="1">
+ <!-- <table align=center width=100% border="0" cellpadding="1" cellspacing="1">
    <tr>
     <td align="center">
     <div id="YPeoplesMapHybrid" style="width:1000px;height:600px"></div>
    </td>
   </tr>
  </table>
-<br>
+ <br>
+ -->
+ <div><a href="/about" style="border: none;" >О сайте</a></div>   
+ <div><a href="/history" style="border: none;" >История изменений + Планы на будующее </a>  </div>
+
 </body>
 </html>

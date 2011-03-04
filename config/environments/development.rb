@@ -16,5 +16,4 @@ config.action_controller.perform_caching             = false
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-
-SITE_URL = "78.108.78.166"
+SITE_URL = "mycity45.ru"

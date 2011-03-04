@@ -1,11 +1,8 @@
-<script type="text/javascript"  src="http://api-maps.yandex.ru/1.1/index.xml?key=ANKfqUwBAAAAVlO6fAQAxO8Nexm5XAiGeMHqQs5D-sr9aw8AAAAAAAAAAAB0L7uxO8zeWf0eCCNAQCBftVxHTw==&modules=pmap">
+<script type="text/javascript"  src="http://api-maps.yandex.ru/1.1/index.xml?key=AJwFaE0BAAAAINMjOwIAJc2OZugzc2yYotdPt3HQW940P2MAAAAAAAAAAACjwCC7HYwkSXQVc-qa8P5AH8wwAA==&modules=pmap">
 </script>
 
 <script type="text/javascript">
-// Создание обработчика для события window.onLoad
     YMaps.jQuery(function () {
-// Создание экземпляра карты и его привязка к созданному контейнеру
- // Установка для карты ее центра и масштаба
     peoplesMapHybrid = new YMaps.Map( document.getElementById("YPeoplesMapHybrid") );
     peoplesMapHybrid.setCenter(new YMaps.GeoPoint(65.3,55.4) , 10, YMaps.MapType.PHYBRID);
     peoplesMapHybrid.addControl(new YMaps.TypeControl([YMaps.MapType.PMAP, YMaps.MapType.PHYBRID]));
@@ -13,14 +10,12 @@
     peoplesMapHybrid.addControl(new YMaps.Zoom());
     peoplesMapHybrid.addControl(new YMaps.ToolBar());
     peoplesMapHybrid.addControl(new YMaps.ScaleLine());
-    // Создание и добавление YMapsML-документа на карту
-    <% unless logged_in? %>
-      var ml = new YMaps.YMapsML('http://78.108.78.166/yml.xml');
+    <% if logged_in? %>
+      var ml = new YMaps.YMapsML('http://mycity45.ru/yml_auth.xml');
     <% else %>
-      var ml = new YMaps.YMapsML('http://78.108.78.166/yml_auth.xml');
+      var ml = new YMaps.YMapsML('http://mycity45.ru/yml.xml');
     <% end %> 
     peoplesMapHybrid.addOverlay(ml);
-    // Обработчик неудачной загрузки YMapsML
     YMaps.Events.observe(ml, ml.Events.Fault, function (ml, error) {
                 alert('Ошибка: ' + error);
                 }); 
@@ -28,14 +23,20 @@
                            function ( peoplesMapHybrid , mEvent) {
   <% if logged_in? %>
 
-  var myHtml = '<form action="/placemarks" class="new_placemark" id="new_placemark" method="post">  <div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc=" type="hidden"></div>  <p><input id="placemark_category_id" name="placemark[category_id]" value="1" checked="checked" type="radio"> Яма <br>  <input id="placemark_category_id" name="placemark[category_id]" value="2" type="radio">Открытый люк <br>  </p>  <p> <label for="placemark_adress">Адрес<br>  <input id="placemark_adress" name="placemark[adress]" size="26" type="text"></p>  <p> <input id="placemark_geopoint" name="placemark[geopoint]"  value="'+mEvent.getGeoPoint()+'" type="hidden"></p><p> <label for="placemark_description">Описание</label><br>  <textarea cols="22" id="placemark_description" name="placemark[description]" rows="5"></textarea></p> <!--<p> <label for="placemark_foto">Foto</label><br>  <input id="placemark_foto" name="placemark[foto]" size="20" type="text"></p> --> <p><input id="placemark_submit" name="commit"value="Create" type="submit"></p></form';
+  var myHtml = '<form action="/placemarks" class="new_placemark" id="new_placemark" method="post">  <div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc=" type="hidden"></div>  <p><input id="placemark_category_id" name="placemark[category_id]" value="1" checked="checked" type="radio"> Яма <br>  <input id="placemark_category_id" name="placemark[category_id]" value="2" type="radio">Открытый люк <br>  </p>  <p> <label for="placemark_adress">Адрес<br>  <input id="placemark_adress" name="placemark[adress]" size="26" type="text"></p>  <p> <input id="placemark_geopoint" name="placemark[geopoint]"  value="'+mEvent.getGeoPoint()+'" type="hidden"></p><p> <label for="placemark_description">Описание</label><br>  <textarea cols="22" id="placemark_description" name="placemark[description]" rows="5"></textarea></p> <!--<p> <label for="placemark_foto">Foto</label><br>  <input id="placemark_foto" name="placemark[foto]" size="20" type="text"></p> --> <p><input id="placemark_submit" name="commit"value="Создать" type="submit"></p></form';
   
-  
-  
-  // var myHtml ='<form action="/placemarks" id="new_placemark" method="post"><p><label for="placemark_kind">Тип метки:</label><br/><select size="1" name="placemark[kind]"><option selected value="Яма">Яма</option><option value="Открытый люк">Открытый люк</option></select><br/><p></p> <!-- <label for="placemark_address">Адрес</label><br /><input id="placemark_address" name="placemark[address]" size="20" type="text"/></p><p>  -->  <label for="placemark_description">Описание:</label><br /><textarea cols="16" id="placemark_description" name="placemark[description]" rows="4"></textarea></p><p> <!--<label for="placemark_foto">Фото</label><br />  <input id="placemark_foto" name="placemark[foto]" size="20" type="text" />  -->    </p><p><input id="placemark_geopoint" name="placemark[geopoint]" type="hidden" value="'+mEvent.getGeoPoint()+'"/> <input id="placemark_submit" name="commit" type="submit" value="Создать"/></p></form>';
-
       peoplesMapHybrid.openBalloon(mEvent.getGeoPoint(), myHtml);
       <% end %>
  });	
     });
   </script>
+
+<table align=center width=100% border="0" cellpadding="1" cellspacing="1">
+   <tr>
+    <td align="center">
+    <div id="YPeoplesMapHybrid" style="width:1000px;height:600px"></div>
+   </td>
+  </tr>
+ </table>
+ <br>
+

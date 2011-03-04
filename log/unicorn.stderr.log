@@ -1,0 +1,54 @@
+I, [2011-02-26T15:04:31.293273 #17602]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:04:31.293556 #17602]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:5: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=17688
+worker=0 ready
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-02-26T15:05:31.882618 #20044]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:05:31.882913 #20044]  INFO -- : Refreshing Gem list
+master process ready
+worker=0 spawned pid=20113
+worker=0 ready
+reaped #<Process::Status: pid=17688,exited(0)> worker=0
+master complete
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-02-26T15:06:12.060798 #21645]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:06:12.061104 #21645]  INFO -- : Refreshing Gem list
+master process ready
+worker=0 spawned pid=21716
+worker=0 ready
+reaped #<Process::Status: pid=20113,exited(0)> worker=0
+master complete
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-02-26T15:08:42.764277 #28660]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:08:42.764573 #28660]  INFO -- : Refreshing Gem list
+master process ready
+worker=0 spawned pid=28795
+worker=0 ready
+reaped #<Process::Status: pid=21716,exited(0)> worker=0
+master complete
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-02-26T15:13:13.908668 #12514]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:13:13.908965 #12514]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:4: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=12633
+worker=0 ready
+reaped #<Process::Status: pid=28795,exited(0)> worker=0
+master complete
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-02-26T15:34:48.454191 #12166]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-02-26T15:34:48.454522 #12166]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:4: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=12292
+worker=0 ready
+reaped #<Process::Status: pid=12633,exited(0)> worker=0
+master complete
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/app/views/placemarks/about.html.erb:4: warning: don't put space before argument parentheses

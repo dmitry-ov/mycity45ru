@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20110217161036) do
     t.string   "foto"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category"
     t.integer  "category_id"
   end
 

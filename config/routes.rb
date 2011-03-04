@@ -2,6 +2,9 @@ ActionController::Routing::Routes.draw do |map|
 
 map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate'
 
+  map.about  '/about', :controller => 'placemarks', :action =>'about'
+  map.about  '/history', :controller => 'placemarks', :action =>'history'
+
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
