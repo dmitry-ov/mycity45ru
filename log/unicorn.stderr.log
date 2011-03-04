@@ -52,3 +52,9 @@ worker=0 ready
 reaped #<Process::Status: pid=12633,exited(0)> worker=0
 master complete
 /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/app/views/placemarks/about.html.erb:4: warning: don't put space before argument parentheses
+I, [2011-03-04T08:39:36.448346 #20955]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-04T08:39:36.448626 #20955]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=21009
+worker=0 ready
