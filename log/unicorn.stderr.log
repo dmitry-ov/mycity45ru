@@ -58,3 +58,13 @@ I, [2011-03-04T08:39:36.448626 #20955]  INFO -- : Refreshing Gem list
 master process ready
 worker=0 spawned pid=21009
 worker=0 ready
+worker=0 PID:21009 timeout (40.163023s > 40s), killing
+reaped #<Process::Status: pid=21009,signaled(SIGKILL=9)> worker=0
+worker=0 spawned pid=19383
+worker=0 ready
+worker=0 PID:19383 timeout (40.036038s > 40s), killing
+worker=0 PID:19383 timeout (41.328012s > 40s), killing
+worker=0 PID:19383 timeout (42.329175s > 40s), killing
+reaped #<Process::Status: pid=19383,signaled(SIGKILL=9)> worker=0
+worker=0 spawned pid=20188
+worker=0 ready

@@ -33862,3 +33862,138 @@ Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:00:1
 Rendering template within layouts/placemarks
 Rendering placemarks/history
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:05:53) [GET]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:07:26) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 336ms (View: 168, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:07:36) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:07:37) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:19:45) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 33ms (View: 13, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-03-04 15:19:46) [GET]
+  [4;36;1mPlacemark Load (0.7ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Completed in 973ms (View: 1, DB: 1) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#about (for 78.108.78.166 at 2011-03-04 15:19:48) [GET]
+Rendering placemarks/about
+Completed in 86ms (View: 85, DB: 0) | 200 OK [http://mycity45.ru/about]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:19:53) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-03-04 15:19:54) [GET]
+  [4;35;1mPlacemark Load (0.5ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.1ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.1ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Completed in 40ms (View: 1, DB: 1) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:19:55) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 178ms (View: 177, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:21:18) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:21:53) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:22:10) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#history (for 78.108.78.166 at 2011-03-04 15:22:22) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-04 15:23:46) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-03-04 15:23:46) [GET]
+  [4;36;1mPlacemark Load (0.5ms)[0m   [0;1mSELECT * FROM "placemarks" [0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Completed in 42ms (View: 1, DB: 1) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing SessionsController#new (for 78.108.78.166 at 2011-03-04 15:23:47) [GET]
+Rendering sessions/new
+Completed in 57ms (View: 56, DB: 0) | 200 OK [http://mycity45.ru/login]
+
+
+Processing PlacemarksController#yml (for 77.88.40.157 at 2011-03-04 15:23:48) [GET]
+  [4;35;1mPlacemark Load (0.5ms)[0m   [0mSELECT * FROM "placemarks" [0m
+  [4;36;1mCategory Load (0.1ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 2) [0m
+Completed in 86ms (View: 1, DB: 1) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing UsersController#new (for 78.108.78.166 at 2011-03-04 15:23:49) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 41ms (View: 39, DB: 0) | 200 OK [http://mycity45.ru/signup]
+
+
+Processing UsersController#new (for 78.108.78.166 at 2011-03-04 15:26:52) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://mycity45.ru/signup]
