@@ -34723,3 +34723,57 @@ Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-05 17:59:38)
 Rendering template within layouts/placemarks
 Rendering placemarks/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 89.251.73.229 at 2011-03-05 18:06:11) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/w00tw00t.at.blackhats.romanian.anti-sec:)" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:14) [GET]
+
+ActionController::RoutingError (No route matches "/phpMyAdmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:14) [GET]
+
+ActionController::RoutingError (No route matches "/phpmyadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:15) [GET]
+
+ActionController::RoutingError (No route matches "/pma/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:16) [GET]
+
+ActionController::RoutingError (No route matches "/myadmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 180.186.0.40 at 2011-03-05 18:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/MyAdmin/scripts/setup.php" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
