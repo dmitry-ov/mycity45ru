@@ -34777,3 +34777,15 @@ ActionController::RoutingError (No route matches "/MyAdmin/scripts/setup.php" wi
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-05 18:20:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://78.108.78.166/]
+
+
+Processing PlacemarksController#index (for 78.108.78.166 at 2011-03-05 18:23:50) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 70ms (View: 68, DB: 0) | 200 OK [http://78.108.78.166/]
