@@ -23,7 +23,7 @@
                            function ( peoplesMapHybrid , mEvent) {
   <% if logged_in? %>
 
-  var myHtml = '<form action="/placemarks" class="new_placemark" id="new_placemark" method="post">  <div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc=" type="hidden"></div>  <p><input id="placemark_category_id" name="placemark[category_id]" value="1" checked="checked" type="radio"> Яма <br>  <input id="placemark_category_id" name="placemark[category_id]" value="2" type="radio">Открытый люк <br>  </p>  <p> <label for="placemark_adress">Адрес<br>  <input id="placemark_adress" name="placemark[adress]" size="26" type="text"></p>  <p> <input id="placemark_geopoint" name="placemark[geopoint]"  value="'+mEvent.getGeoPoint()+'" type="hidden"></p><p> <label for="placemark_description">Описание</label><br>  <textarea cols="22" id="placemark_description" name="placemark[description]" rows="5"></textarea></p> <!--<p> <label for="placemark_foto">Foto</label><br>  <input id="placemark_foto" name="placemark[foto]" size="20" type="text"></p> --> <p><input id="placemark_submit" name="commit"value="Создать" type="submit"></p></form';
+  var myHtml = '<form action="/placemarks" class="new_placemark" id="new_placemark" method="post">  <div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="jXglQqdl/wn6VCOfMjxtyR2ZP7R/QITLZO9ciN5d3qc=" type="hidden"></div>  <p><input id="placemark_category_id" name="placemark[category_id]" value="1" checked="checked" type="radio"> Яма <br>  <input id="placemark_category_id" name="placemark[category_id]" value="2" type="radio">Открытый люк <br>  </p>  <p> <label for="placemark_adress">Адрес<br>  <input id="placemark_adress" name="placemark[adress]" size="26" type="text"></p>  <p> <input id="placemark_geopoint" name="placemark[geopoint]"  value="'+mEvent.getGeoPoint()+'" type="hidden"></p><p> <label for="placemark_description">Описание</label><br>  <textarea cols="22" id="placemark_description" name="placemark[description]" rows="5"></textarea></p> <!--<p> <label for="placemark_foto">Foto</label><br>  <input id="placemark_foto" name="placemark[foto]" size="20" type="text"></p> --> <p><input id="placemark_submit" name="commit"value="Создать" type="submit"></p></form>';
   
       peoplesMapHybrid.openBalloon(mEvent.getGeoPoint(), myHtml);
       <% end %>
@@ -31,12 +31,4 @@
     });
   </script>
 
-<table align=center width=100% border="0" cellpadding="1" cellspacing="1">
-   <tr>
-    <td align="center">
-    <div id="YPeoplesMapHybrid" style="width:1000px;height:600px"></div>
-   </td>
-  </tr>
- </table>
- <br>
-
+<div id="YPeoplesMapHybrid" style="clear:left; margin-left:100px;  width:1000px;  height:650px"></div>

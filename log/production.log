@@ -230,3 +230,187 @@ ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: placemarks
   /var/lib/gems/1.8/bin/unicorn_rails:19
 
 Rendering /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/public/500.html (500 Internal Server Error)
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:41:00) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: placemarks: SELECT * FROM "placemarks" ):
+  app/controllers/placemarks_controller.rb:29:in `yml'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:519:in `process_client'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:594:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:482:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `fork'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:489:in `maintain_worker_count'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:163:in `start'
+  unicorn (3.0.0) lib/unicorn.rb:13:in `run'
+  unicorn (3.0.0) bin/unicorn_rails:208
+  /var/lib/gems/1.8/bin/unicorn_rails:19:in `load'
+  /var/lib/gems/1.8/bin/unicorn_rails:19
+
+Rendering /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/public/500.html (500 Internal Server Error)
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:41:02) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.29 at 2011-03-04 20:41:03) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: placemarks: SELECT * FROM "placemarks" ):
+  app/controllers/placemarks_controller.rb:29:in `yml'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:519:in `process_client'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:594:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:482:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `fork'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:489:in `maintain_worker_count'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:163:in `start'
+  unicorn (3.0.0) lib/unicorn.rb:13:in `run'
+  unicorn (3.0.0) bin/unicorn_rails:208
+  /var/lib/gems/1.8/bin/unicorn_rails:19:in `load'
+  /var/lib/gems/1.8/bin/unicorn_rails:19
+
+Rendering /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/public/500.html (500 Internal Server Error)
+
+
+Processing PlacemarksController#history (for 78.108.79.105 at 2011-03-04 20:41:06) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/history
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/history]
+
+
+Processing PlacemarksController#about (for 78.108.79.105 at 2011-03-04 20:41:08) [GET]
+Rendering placemarks/about
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/about]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:41:11) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:41:11) [GET]
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: placemarks: SELECT * FROM "placemarks" ):
+  app/controllers/placemarks_controller.rb:29:in `yml'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:519:in `process_client'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:594:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:592:in `worker_loop'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:482:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `fork'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:479:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `each'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:475:in `spawn_missing_workers'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:489:in `maintain_worker_count'
+  unicorn (3.0.0) lib/unicorn/http_server.rb:163:in `start'
+  unicorn (3.0.0) lib/unicorn.rb:13:in `run'
+  unicorn (3.0.0) bin/unicorn_rails:208
+  /var/lib/gems/1.8/bin/unicorn_rails:19:in `load'
+  /var/lib/gems/1.8/bin/unicorn_rails:19
+
+Rendering /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/public/500.html (500 Internal Server Error)
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:41:55) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/placemarks]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:41:56) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing SessionsController#new (for 78.108.79.105 at 2011-03-04 20:42:03) [GET]
+Rendering sessions/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://mycity45.ru/login]
+
+
+Processing SessionsController#create (for 78.108.79.105 at 2011-03-04 20:42:09) [POST]
+  Parameters: {"commit"=>"Вход", "authenticity_token"=>"J++eJO3+JSYsL5nSnExGm/L68fmZVkSkVEjxLBoKYi0=", "login"=>"dio", "password"=>"linuxbsd"}
+Failed login for 'dio' from 78.108.79.105 at Fri Mar 04 17:42:09 UTC 2011
+Rendering sessions/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://mycity45.ru/session]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:42:13) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:42:14) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:42:19) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:42:20) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:42:57) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:42:58) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:42:59) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.29 at 2011-03-04 20:43:00) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:43:01) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.25 at 2011-03-04 20:43:02) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:43:04) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.27 at 2011-03-04 20:43:04) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+
+
+Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 20:43:06) [GET]
+Rendering template within layouts/placemarks
+Rendering placemarks/index
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
+
+
+Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:43:07) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
