@@ -414,6 +414,7 @@ Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
 
 Processing PlacemarksController#yml (for 93.158.152.28 at 2011-03-04 20:43:07) [GET]
 Completed in 1ms (View: 0, DB: 0) | 200 OK [http://mycity45.ru/yml.xml]
+<<<<<<< HEAD
 
 
 Processing PlacemarksController#index (for 78.108.79.105 at 2011-03-04 21:23:53) [GET]
@@ -1076,3 +1077,5 @@ Completed in 1ms (View: 1, DB: 0) | 200 OK [http://mycity45.ru/]
 
 Processing PlacemarksController#yml (for 77.88.40.156 at 2011-03-05 13:10:22) [GET]
 Completed in 33ms (View: 0, DB: 1) | 200 OK [http://mycity45.ru/yml.xml]
+=======
+>>>>>>> fba3fba6d7cd4b0a9fd26f019fdb7c4c305ca809

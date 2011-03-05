@@ -9,6 +9,7 @@
 <body>
 
 <% if logged_in? -%>
+<<<<<<< HEAD
 <div id="user-bar-greeting">
    Вошел как <%= link_to_current_user :content_method => :login %>
 </div>
@@ -29,17 +30,50 @@
    <%= link_to "Регистрация", signup_path, { :title => "Создать учетную  запись" } %>
    </div>
 
+=======
+<div id="user-bar-greeting"> 
+  Вошел как <%= link_to_current_user :content_method => :login %> 
+</div>
+
+<div id="user-bar-action"  >
+  <%= link_to " (Выход) ", logout_path, { :title => "Выход" } %> 
+</div> 
+
+<% else -%>
+<!--<div id="user-bar-greeting"><%= link_to_login_with_IP 'Логин по IP',:style=>'border: none;'%></div>--> 
+<div id="user-bar-action" >
+  
+  <div style="float:left;" >  
+    <%= link_to "Вход",  login_path,  { :title => "Вход" } %> 
+  </div>
+  
+  <div style="float:left; margin-left: 40px; " > 
+    <%= link_to "Регистрация", signup_path, { :title => "Создать учетную  запись" } %> 
+  </div> 
+  
+>>>>>>> fba3fba6d7cd4b0a9fd26f019fdb7c4c305ca809
 </div>
 <% end -%>
 
 <br></br>
+<<<<<<< HEAD
   <%= yield %>
 <br>
 
 <div style = "float:left;"><a href="/about" style="border: none;" >О сайте</a></div>
 <div style = "float:left; margin-left: 40px;" ><a href="/history" style="border: none;" >История изменений + Планы на будующее </a>  </div>
 
+=======
 
+<%= yield %>
+<br>
+
+<div style = "float:left;"><a href="/about" style="border: none;" >О сайте</a></div>   
+ <div style = "float:left; margin-left: 40px;" ><a href="/history" style="border: none;" >История изменений + Планы на будующее </a>  </div>
+>>>>>>> fba3fba6d7cd4b0a9fd26f019fdb7c4c305ca809
+
+ <!--<div> -->
+ 
 </body>
 </html>
 

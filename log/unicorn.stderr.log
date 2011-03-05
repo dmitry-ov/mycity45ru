@@ -88,6 +88,7 @@ worker=0 spawned pid=22557
 worker=0 ready
 reaped #<Process::Status: pid=14751,exited(0)> worker=0
 master complete
+<<<<<<< HEAD
 executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
 forked child re-executing...
 I, [2011-03-04T21:23:52.035132 #28965]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
@@ -138,3 +139,5 @@ worker=0 spawned pid=2200
 worker=0 ready
 reaped #<Process::Status: pid=27027,exited(0)> worker=0
 master complete
+=======
+>>>>>>> fba3fba6d7cd4b0a9fd26f019fdb7c4c305ca809
