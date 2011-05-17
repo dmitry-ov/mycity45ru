@@ -141,3 +141,73 @@ reaped #<Process::Status: pid=27027,exited(0)> worker=0
 master complete
 =======
 >>>>>>> fba3fba6d7cd4b0a9fd26f019fdb7c4c305ca809
+I, [2011-03-05T13:38:02.022151 #19523]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-05T13:38:02.022454 #19523]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=19714
+worker=0 ready
+worker=0 PID:19714 timeout (42.752071s > 40s), killing
+reaped #<Process::Status: pid=19714,signaled(SIGKILL=9)> worker=0
+worker=0 spawned pid=17563
+worker=0 ready
+worker=0 PID:17563 timeout (40.005509s > 40s), killing
+reaped #<Process::Status: pid=17563,signaled(SIGKILL=9)> worker=0
+worker=0 spawned pid=23476
+worker=0 ready
+reaped #<Process::Status: pid=23476,exited(0)> worker=0
+master complete
+I, [2011-03-15T18:31:00.508824 #27761]  INFO -- : unlinking existing socket=/var/sockets/ya45ru.ovdi.sock
+I, [2011-03-15T18:31:00.513051 #27761]  INFO -- : listening on addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-15T18:31:00.513348 #27761]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=27899
+worker=0 ready
+reaped #<Process::Status: pid=27899,exited(0)> worker=0
+master complete
+I, [2011-03-29T11:51:24.695594 #7923]  INFO -- : unlinking existing socket=/var/sockets/ya45ru.ovdi.sock
+I, [2011-03-29T11:51:24.703581 #7923]  INFO -- : listening on addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-29T11:51:24.703919 #7923]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=8132
+worker=0 ready
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-03-29T16:08:06.063886 #25523]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-29T16:08:06.064234 #25523]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=25838
+worker=0 ready
+reaped #<Process::Status: pid=8132,exited(0)> worker=0
+master complete
+reaped #<Process::Status: pid=25838,exited(0)> worker=0
+master complete
+I, [2011-03-29T21:55:23.456901 #4360]  INFO -- : unlinking existing socket=/var/sockets/ya45ru.ovdi.sock
+I, [2011-03-29T21:55:23.484074 #4360]  INFO -- : listening on addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-29T21:55:23.484500 #4360]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=4590
+worker=0 ready
+executing ["/var/lib/gems/1.8/bin/unicorn_rails", "-Dc", "/etc/unicorn/ya45ru.ovdi.rb"] (in /var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release)
+forked child re-executing...
+I, [2011-03-30T10:54:19.900348 #17248]  INFO -- : inherited addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-03-30T10:54:19.900669 #17248]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=17375
+worker=0 ready
+reaped #<Process::Status: pid=4590,exited(0)> worker=0
+master complete
+reaped #<Process::Status: pid=17375,exited(0)> worker=0
+master complete
+I, [2011-04-20T12:01:13.849243 #7997]  INFO -- : unlinking existing socket=/var/sockets/ya45ru.ovdi.sock
+I, [2011-04-20T12:01:13.852068 #7997]  INFO -- : listening on addr=/var/sockets/ya45ru.ovdi.sock fd=3
+I, [2011-04-20T12:01:13.852503 #7997]  INFO -- : Refreshing Gem list
+/var/www/home/hosting_ovdi/projects/ya45ru/releases/initial_release/config/environment.rb:6: warning: already initialized constant RAILS_ENV
+master process ready
+worker=0 spawned pid=8190
+worker=0 ready

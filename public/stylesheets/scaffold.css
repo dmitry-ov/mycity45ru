@@ -6,10 +6,12 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
-.registration_form {
-    margin-left: 240px  
+.map_rectangle{ 
+ clear:left; 
+ margin-left: 100px;
+ width: 900px;
+ height: 650px
 }
-
 
 pre {
   background-color: #eee;
